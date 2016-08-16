@@ -1,0 +1,17 @@
+{
+  "name": "hermesweb",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "jquery": "^3.1.0",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7",
+    "angular-local-storage": "^0.3.0",
+    "metro-bootstrap": "*"
+  },
+  "resolutions": {
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7"
+  }
+}

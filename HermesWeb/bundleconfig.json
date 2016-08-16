@@ -1,0 +1,104 @@
+[
+  {
+    "outputFileName": "app/js/controllers/indexController.min.js",
+    "inputFiles": [
+      "app/js/controllers/indexController.js"
+    ]
+  },
+  {
+    "outputFileName": "app/js/controllers/dashController.min.js",
+    "inputFiles": [
+      "app/js/controllers/dashController.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/bootstrap/dist/css/bootstrap-theme.min.css",
+    "inputFiles": [
+      "app/lib/bootstrap/dist/css/bootstrap-theme.css"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/bootstrap/dist/css/bootstrap.min.css",
+    "inputFiles": [
+      "app/lib/bootstrap/dist/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/font-awesome/css/font-awesome.min.css",
+    "inputFiles": [
+      "app/lib/font-awesome/css/font-awesome.css"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/angular/angular.min.js",
+    "inputFiles": [
+      "app/lib/angular/angular.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/angular-route/angular-route.min.js",
+    "inputFiles": [
+      "app/lib/angular-route/angular-route.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/angular-local-storage/dist/angular-local-storage.min.js",
+    "inputFiles": [
+      "app/lib/angular-local-storage/dist/angular-local-storage.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/bootstrap/dist/js/bootstrap.min.js",
+    "inputFiles": [
+      "app/lib/bootstrap/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/jquery/dist/jquery.min.min.js",
+    "inputFiles": [
+      "app/lib/jquery/dist/jquery.min.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/jquery/dist/jquery.slim.min.js",
+    "inputFiles": [
+      "app/lib/jquery/dist/jquery.slim.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/jquery/dist/jquery.min.js",
+    "inputFiles": [
+      "app/lib/jquery/dist/jquery.js"
+    ]
+  },
+  {
+    "outputFileName": "app/lib/jquery/external/sizzle/dist/sizzle.min.js",
+    "inputFiles": [
+      "app/lib/jquery/external/sizzle/dist/sizzle.js"
+    ]
+  },
+  {
+    "outputFileName": "app/js/site.min.js",
+    "inputFiles": [
+      "app/js/site.js"
+    ]
+  },
+  {
+    "outputFileName": "app/js/services/dashService.min.js",
+    "inputFiles": [
+      "app/js/services/dashService.js"
+    ]
+  },
+  {
+    "outputFileName": "app/js/controllers/destinyController.min.js",
+    "inputFiles": [
+      "app/js/controllers/destinyController.js"
+    ]
+  },
+  {
+    "outputFileName": "app/js/services/destinyService.min.js",
+    "inputFiles": [
+      "app/js/services/destinyService.js"
+    ]
+  }
+]

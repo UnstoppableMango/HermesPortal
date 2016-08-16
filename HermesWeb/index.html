@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="HermesPortal">
+<head>
+    <meta charset="utf-8" />
+    <title>Hermes Portal</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link href="app/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="app/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />-->
+    <link href="app/lib/metro-bootstrap/dist/css/metro-bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/site.css" rel="stylesheet" />
+    <link href="app/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body ng-controller="indexController">
+    <div id="loading" ng-include="'app/views/partial/loading.html'" ng-show="loading"></div>
+    <div id="background" ng-include="'app/views/partial/background.html'"></div>
+    <div id="header" ng-include="'app/views/partial/navbar.html'"></div>
+    <div id="content" class="row">
+        <aside class="col-md-1">
+            <!--<div id="sidebar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>-->
+        </aside>
+        <div class="col-md-10">
+            <div data-ng-view=""></div>
+        </div>
+        <aside class="col-md-1"></aside>
+    </div><!-- ./content -->
+    <div id="footer">
+        <div class="text-muted">Erik Rasmussen - Hermes Portal&trade;</div>
+    </div><!-- ./footer -->
+    <!--3rd party libraries-->
+    <script src="app/lib/angular/angular.min.js"></script>
+    <script src="app/lib/angular-route/angular-route.min.js"></script>
+    <script src="app/lib/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="app/lib/jquery/dist/jquery.min.js"></script>
+    <script src="app/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Load app main script-->
+    <script src="app/js/site.js"></script>
+    <!--Load services-->
+    <script src="app/js/services/dashService.js"></script>
+    <script src="app/js/services/destinyService.js"></script>
+    <!--Load controllers-->
+    <script src="app/js/controllers/indexController.js"></script>
+    <script src="app/js/controllers/navbarController.js"></script>
+    <script src="app/js/controllers/backgroundController.js"></script>
+    <script src="app/js/controllers/dashController.js"></script>
+    <script src="app/js/controllers/destinyController.js"></script>
+    <!--Load custom filters-->
+    <!--Load custom directives-->
+</body>
+</html>
