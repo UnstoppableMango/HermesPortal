@@ -24,7 +24,7 @@ namespace HermesAPI.Controllers
             }
             catch(DestinyException dex)
             {
-                return StatusCode(500, dex.ErrorCode);
+                return StatusCode(500, $"{dex.ErrorCode} : {dex.Message}");
             }
             catch (Exception ex)
             {
@@ -43,7 +43,7 @@ namespace HermesAPI.Controllers
             }
             catch (DestinyException dex)
             {
-                return StatusCode(500, dex.ErrorCode);
+                return StatusCode(500, $"{dex.ErrorCode} : {dex.Message}");
             }
             catch (Exception ex)
             {

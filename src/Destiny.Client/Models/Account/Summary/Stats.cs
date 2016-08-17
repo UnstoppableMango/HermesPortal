@@ -2,14 +2,14 @@
 {
     public class Stats
     {
-        public Stat DEFENSE { get; set; }
-        public Stat INTELLECT { get; set; }
-        public Stat DISCIPLINE { get; set; }
-        public Stat STRENGTH { get; set; }
-        public Stat LIGHT { get; set; }
-        public Stat ARMOR { get; set; }
-        public Stat AGILITY { get; set; }
-        public Stat RECOVERY { get; set; }
-        public Stat OPTICS { get; set; }
+        public Stat STAT_DEFENSE { get; set; }
+        public Stat STAT_INTELLECT { get; set; }
+        public Stat STAT_DISCIPLINE { get; set; }
+        public Stat STAT_STRENGTH { get; set; }
+        public Stat STAT_LIGHT { get; set; }
+        public Stat STAT_ARMOR { get; set; }
+        public Stat STAT_AGILITY { get; set; }
+        public Stat STAT_RECOVERY { get; set; }
+        public Stat STAT_OPTICS { get; set; }
     }
 }
