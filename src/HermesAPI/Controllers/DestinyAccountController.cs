@@ -13,7 +13,7 @@ namespace HermesAPI.Controllers
     [Route("api/Destiny/Account")]
     public class DestinyAccountController : BaseController
     {
-        [Route("GetAccountSummary")]
+        [Route("Summary")]
         [HttpGet]
         public IActionResult GetAccountSummary(int membershipType, string destinyMembershipId)
         {
@@ -32,13 +32,32 @@ namespace HermesAPI.Controllers
             }
         }
 
-        [Route("GetAccountAdvisors")]
+        [Route("Advisors")]
         [HttpGet]
         public IActionResult GetAccountAdvisors(int membershipType, string destinyMembershipId)
         {
             try
             {
                 var result = _destinyClient.GetAccountAdvisors(membershipType, destinyMembershipId);
+                return Json(result);
+            }
+            catch (DestinyException dex)
+            {
+                return StatusCode(500, $"{dex.ErrorCode} : {dex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [Route("Items")]
+        [HttpGet]
+        public IActionResult GetAccountItmes(int membershipType, string destinyMembershipId)
+        {
+            try
+            {
+                var result = _destinyClient.GetAccountItmes(membershipType, destinyMembershipId);
                 return Json(result);
             }
             catch (DestinyException dex)
