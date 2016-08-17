@@ -6,6 +6,33 @@ using System.Threading.Tasks;
 
 namespace Destiny.Client
 {
+    public enum DefinitionType
+    {
+        None,
+        Activity,
+        ActivityType,
+        Class,
+        Gender,
+        InventoryBucket,
+        InventoryItem,
+        Progression,
+        Race,
+        Stat,
+        TalentGrid,
+        StatGroup,
+        UnlockFlag,
+        Vendor,
+        Destination,
+        Place,
+        DirectorBook,
+        MaterialRequirement,
+        SandboxPerk,
+        ArtDye,
+        ArtDyeChannel,
+        ActivityBundle,
+        GearAsset
+    }
+
     interface IDestinyCommunicationsClient : IDisposable
     {
         Task<string> GetItem(string itemType, string itemId);
