@@ -10,10 +10,11 @@
     <link href="app/lib/metro-bootstrap/dist/css/metro-bootstrap.min.css" rel="stylesheet" />
     <link href="app/css/site.css" rel="stylesheet" />
     <link href="app/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="app/lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
 </head>
 <body ng-controller="indexController">
     <div id="loading" ng-include="'app/views/partial/loading.html'" ng-show="loading"></div>
-    <div id="background" ng-include="'app/views/partial/background.html'"></div>
+    <!--<div id="background" ng-include="'app/views/partial/background.html'"></div>-->
     <div id="header" ng-include="'app/views/partial/navbar.html'"></div>
     <div id="content" class="row">
         <aside class="col-md-1">
@@ -36,7 +37,9 @@
     <script src="app/lib/angular-route/angular-route.min.js"></script>
     <script src="app/lib/angular-local-storage/dist/angular-local-storage.min.js"></script>
     <script src="app/lib/jquery/dist/jquery.min.js"></script>
+    <script src="app/lib/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="app/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app/lib/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <!--Load app main script-->
     <script src="app/js/site.js"></script>
     <!--Load services-->

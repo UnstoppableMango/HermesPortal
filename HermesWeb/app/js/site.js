@@ -14,3 +14,17 @@ app.config(function ($routeProvider) {
 
     $routeProvider.otherwise({ redirectTo: "/dash" });
 });
+
+var buildConfig = "dev";
+
+var serviceBase;
+if (buildConfig == "dev") {
+    serviceBase = "http://localhost:6953";
+}
+else if (buildConfig == "prod") {
+    serviceBase = "http://localhost:5000";
+}
+
+app.constant('serviceSettings', {
+    apiServiceBaseUri: serviceBase
+});

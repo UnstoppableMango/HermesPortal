@@ -43,7 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\css\DestinyHexValues.txt" />
+    <Content Include="app\css\DestinyHexValues.css" />
     <Content Include="app\images\2726250.jpg" />
     <Content Include="app\images\Destiny_20150915140922.jpg" />
     <Content Include="app\images\dubai-abudhabi.jpg" />
@@ -170,6 +170,11 @@
     </Content>
     <Content Include="app\lib\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="app\lib\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="app\lib\jquery-mousewheel\jquery.mousewheel.js" />
+    <Content Include="app\lib\jquery-mousewheel\jquery.mousewheel.min.js">
+      <DependentUpon>jquery.mousewheel.js</DependentUpon>
+    </Content>
+    <Content Include="app\lib\jquery-mousewheel\LICENSE.txt" />
     <Content Include="app\lib\jquery\AUTHORS.txt" />
     <Content Include="app\lib\jquery\dist\core.js" />
     <Content Include="app\lib\jquery\dist\jquery.js" />
@@ -298,6 +303,15 @@
     <Content Include="app\lib\jquery\src\var\support.js" />
     <Content Include="app\lib\jquery\src\var\toString.js" />
     <Content Include="app\lib\jquery\src\wrap.js" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.concat.min.js">
+      <DependentUpon>jquery.mCustomScrollbar.js</DependentUpon>
+    </Content>
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.css" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.js" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.min.css">
+      <DependentUpon>jquery.mCustomScrollbar.css</DependentUpon>
+    </Content>
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\mCSB_buttons.png" />
     <Content Include="app\lib\metro-bootstrap\.gitattributes" />
     <Content Include="app\lib\metro-bootstrap\.gitignore" />
     <Content Include="app\lib\metro-bootstrap\app\fonts\font-awesome\fontawesome-webfont.svg" />
@@ -553,6 +567,15 @@
     <Content Include="app\lib\metro-bootstrap\metro-bootstrap.nuspec" />
     <Content Include="app\lib\metro-bootstrap\package.json" />
     <Content Include="app\lib\metro-bootstrap\README.md" />
+    <Content Include="app\fonts\Futura-T-OT-Book_19064.ttf" />
+    <Content Include="app\fonts\NHaasGroteskTXPro-65Md.ttf" />
+    <Content Include="app\fonts\EpocaPro-Medium.otf" />
+    <Content Include="app\lib\jquery-mousewheel\.bower.json" />
+    <Content Include="app\lib\jquery-mousewheel\bower.json" />
+    <Content Include="app\lib\jquery-mousewheel\ChangeLog.md" />
+    <Content Include="app\lib\jquery-mousewheel\README.md" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\.bower.json" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\bower.json" />
     <None Include="bundleconfig.json" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\HermesWeb.pubxml" />

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Destiny.Client
 {
@@ -18,6 +19,16 @@ namespace Destiny.Client
         public DestinyClient(DestinyClientConfiguration config)
         {
             _destiny = new DestinyCommunicationsClient(config);
+        }
+
+        public dynamic GetNews()
+        {
+            using (var destiny = _destiny)
+            {
+                var result = destiny.GetNews().Result;
+                dynamic response = ModelFactory.DeserializeFeed(result);
+                return response;
+            }
         }
 
         public dynamic GetItem(string itemType, string itemId)

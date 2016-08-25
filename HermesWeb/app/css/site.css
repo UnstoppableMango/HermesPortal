@@ -215,6 +215,9 @@ Yes, these may not be as semantic as we would all like, but they are necessary f
 
 /*****Content*****/
 /*Define all elements in the content area*/
+.destiny {
+    font-family: Futura-T-OT-Book_19064;
+}
 
 /*Widgets Section Styles*/
 #widgets {
@@ -230,11 +233,14 @@ Yes, these may not be as semantic as we would all like, but they are necessary f
         padding: 0;
     }
 
+.col-fill {
+}
+
 /*Widget Styles*/
 .widget {
     margin: 1rem;
     padding: 1rem;
-    text-align: right;
+    background-color: darkgray;
     box-shadow: 10px 10px 75px -23px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 75px -23px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 75px -23px rgba(0,0,0,0.75);
@@ -245,9 +251,11 @@ Yes, these may not be as semantic as we would all like, but they are necessary f
 }
 
 .widget-title {
+    text-align: right;
 }
 
 .widget-body {
+    text-align: left;
 }
 
 #serverload {
@@ -255,12 +263,83 @@ Yes, these may not be as semantic as we would all like, but they are necessary f
 }
 
 #destiny-news {
+    font-family: Futura-T-OT-Book_19064;
     background-color: #2A333E;
     color: #ECBF1E;
 }
+
+    #destiny-news .widget-body {
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    #destiny-news ul {
+        padding: 0;
+        margin: 10px;
+        list-style-type: none;
+    }
+
+    #destiny-news li {
+        position: relative;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+        #destiny-news li:last-child {
+            margin-right: 0;
+        }
+
+        #destiny-news li:after {
+            content: '';
+            background-color: #ECBF1E;
+            display: block;
+            margin: auto;
+            height: 5px;
+            width: 0;
+            transition: width .5s ease;
+        }
+
+        #destiny-news li:hover:after {
+            width: 100%;
+        }
+
+        #destiny-news li * {
+            color: #94989D;
+        }
+
+        #destiny-news li:hover * {
+            color: #F4F4F4;
+        }
+
+        #destiny-news li a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
 
 /*****Footer*****/
 /*Define all elements in the footer*/
 
 /*****Etc*****/
 /*Continue to define the other sections one by one*/
+@font-face {
+    font-family: 'Futura-T-OT-Book_19064';
+    src: url('../fonts/Futura-T-OT-Book_19064.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NHaasGroteskTXPro-65Md';
+    src: url('../fonts/NHaasGroteskTXPro-65Md.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EpocaPro-Medium';
+    src: url('../fonts/EpocaPro-Medium.otf') format('opentype');
+}

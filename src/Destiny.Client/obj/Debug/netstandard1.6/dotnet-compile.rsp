@@ -59,12 +59,14 @@
 --reference:C:\Users\Erik\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Erik\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Erik\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
+--reference:C:\Users\Erik\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\DestinyClient.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\DestinyClientConfiguration.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\DestinyCommunicationsClient.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\DestinyException.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\IDestinyCommunicationsClient.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\ModelFactory.cs
+C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\Models\FeedItem.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\Models\Messagedata.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\Models\Response.cs
 C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\Models\RootObject.cs

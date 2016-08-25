@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -22,6 +19,24 @@ namespace Destiny.Client
             client.BaseAddress = new Uri(_config.baseUrl);
             client.DefaultRequestHeaders.Add("X-API-Key", _config.apiKey);
             return client;
+        }
+
+        public async Task<string> GetNews()
+        {
+            var httpClient = new HttpClient();
+            try
+            {
+                var response = await httpClient.GetAsync("https://www.bungie.net/en/rss/News?category=news-destiny&currentpage=1");
+
+                response.EnsureSuccessStatusCode();
+
+                var content = response.Content.ReadAsStringAsync();
+                return await content;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<string> GetItem(string itemType, string itemId)
