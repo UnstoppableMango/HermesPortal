@@ -1,4 +1,6 @@
-﻿var app = angular.module('HermesPortal', ['ngRoute']);
+﻿var app = angular.module('HermesPortal', [
+    'ngRoute'
+]);
 
 app.config(function ($routeProvider) {
     $routeProvider.when("/dash", {

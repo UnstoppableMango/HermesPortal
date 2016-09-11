@@ -1,13 +1,15 @@
 ﻿'use strict';
 app.controller('dashController', ['$scope', 'dashService', function ($scope, dashService) {
 
-    /* initialize scrollbar */
-    $(".widget-body").mCustomScrollbar({
-        theme: "minimal",
-        axis: "y"
-    });
+    $scope.dnews = {
+        scrollbar: {
+
+        }
+    };
 
     var ul = document.getElementById("destiny-news").getElementsByTagName("ul")[0];
-    dashService.GetDestinyRss(ul);
-
+    $scope.dloading = true;
+    dashService.GetDestinyRss(ul).then(function () {
+        $("#destiny-news").find(".widget-loading").css({ "visibility": "hidden", "opacity": "0" });
+    })
 }]);

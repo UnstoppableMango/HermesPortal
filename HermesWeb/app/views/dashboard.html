@@ -3,7 +3,7 @@
         <div class="jumbotron">
             <h1>Welcome to the Portal!</h1>
             <p>
-                A small scale intro to web design built by me, for me. <br />
+                A small scale intro to web design built by me, for me.<br />
                 <small>&nbsp; - Erik Rasmussen</small>
             </p>
             <p><a class="btn btn-primary btn-lg" role="button" ng-click="">Get Started</a></p>
@@ -16,6 +16,7 @@
 
                 <div class="row">
                     <div id="serverload" class="widget">
+                        <div class="widget-loading" ng-include="'app/views/partial/widgetloading.html'"></div>
                         <div class="widget-background"></div>
                         <div class="widget-title">
                             <h3>Hardware Statistics</h3>
@@ -28,6 +29,7 @@
 
                 <div class="row">
                     <div id="" class="widget">
+                        <div class="widget-loading" ng-include="'app/views/partial/widgetloading.html'"></div>
                         <div class="widget-background"></div>
                         <div class="widget-title">
                             <h3>Title</h3>
@@ -42,11 +44,13 @@
 
             <div class="col-md-8">
                 <div id="destiny-news" class="widget">
+                    <div class="widget-loading" ng-include="'app/views/partial/widgetloading.html'"></div>
                     <div class="widget-background"></div>
                     <div class="widget-title">
+                        <img src="../../app/images/game039.png" />
                         <h1>Destiny News</h1>
                     </div>
-                    <div class="widget-body">
+                    <div class="widget-body" ng-scrollbar ngsb-theme="minimal" ng-model="dnews">
                         <ul></ul>
                     </div>
                 </div>
