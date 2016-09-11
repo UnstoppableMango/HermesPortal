@@ -29,13 +29,6 @@ app.factory('dashService', ['$http', 'serviceSettings', function ($http, service
                 $http.get(serviceBase + "/api/GetHtml", {
                     params: { 'url': e.link }
                 }).then(function (results) {
-                    //var html = document.createElement('html');
-                    //html.innerHTML = results.data;
-
-                    //var temp = html.getElementsByClassName('image')[0];
-                    //var style = temp.style;
-                    //var imgString = style.backgroundImage;
-                    //var arr = imgString.split("\"");
                     var start = results.data.search('<div class="image"');
                     var temp = results.data.slice(start);
                     var end = temp.search('</div>');
