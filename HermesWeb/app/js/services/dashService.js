@@ -18,6 +18,7 @@ app.factory('dashService', ['$http', 'serviceSettings', function ($http, service
                 var h3 = document.createElement("h3");
                 var p = document.createElement("p");
                 var span = document.createElement("span");
+                var img = document.createElement("img");
 
                 a.setAttribute('href', e.link);
                 a.setAttribute('target', '_blank');
@@ -25,6 +26,30 @@ app.factory('dashService', ['$http', 'serviceSettings', function ($http, service
                 p.textContent = e.description;
                 span.textContent = e.publishDate;
 
+                $http.get(serviceBase + "/api/GetHtml", {
+                    params: { 'url': e.link }
+                }).then(function (results) {
+                    //var html = document.createElement('html');
+                    //html.innerHTML = results.data;
+
+                    //var temp = html.getElementsByClassName('image')[0];
+                    //var style = temp.style;
+                    //var imgString = style.backgroundImage;
+                    //var arr = imgString.split("\"");
+                    var start = results.data.search('<div class="image"');
+                    var temp = results.data.slice(start);
+                    var end = temp.search('</div>');
+                    temp = temp.slice(0, end);
+                    var div = document.createElement('div');
+                    div.innerHTML = temp;
+                    div = div.getElementsByClassName('image')[0];
+                    var style = div.style;
+                    var imgString = style.backgroundImage;
+                    var arr = imgString.split("\"");
+                    img.setAttribute('src', 'http://bungie.net' + arr[1]);
+                });
+
+                li.appendChild(img);
                 li.appendChild(a);
                 li.appendChild(h3);
                 li.appendChild(span);
