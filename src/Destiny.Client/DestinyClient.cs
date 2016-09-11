@@ -1,6 +1,7 @@
 ﻿using Destiny.Client.Models;
 using Destiny.Client.Models.Account.Advisors;
 using Destiny.Client.Models.Account.Summary;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,12 @@ namespace Destiny.Client
             _destiny = new DestinyCommunicationsClient(config);
         }
 
-        public SummaryData GetAccountSummary(int membershipType, string destinyMembershipId)
+        public dynamic GetItem(string itemType, string itemId)
         {
-            using(var destiny = _destiny)
+            using (var destiny = _destiny)
             {
-                var result = destiny.GetAccountSummary(membershipType, destinyMembershipId).Result;
-                var response = ModelFactory.Deserialize<RootObject<SummaryData>>(result);
+                var result = destiny.GetItem(itemType, itemId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
                 var code = (DestinyErrorCode)response.ErrorCode;
                 if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
                     throw new DestinyException(code);
@@ -32,12 +33,90 @@ namespace Destiny.Client
             }
         }
 
-        public AdvisorsData GetAccountAdvisors(int membershipType, string destinyMembershipId)
+        public dynamic GetAccountSummary(int membershipType, string destinyMembershipId)
+        {
+            using(var destiny = _destiny)
+            {
+                var result = destiny.GetAccountSummary(membershipType, destinyMembershipId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
+                var code = (DestinyErrorCode)response.ErrorCode;
+                if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
+                    throw new DestinyException(code);
+                return response.Response.data;
+            }
+        }
+
+        public dynamic GetAccountAdvisors(int membershipType, string destinyMembershipId)
         {
             using (var destiny = _destiny)
             {
                 var result = destiny.GetAccountAdvisors(membershipType, destinyMembershipId).Result;
-                var response = ModelFactory.Deserialize<RootObject<AdvisorsData>>(result);
+                dynamic response = JsonConvert.DeserializeObject(result);
+                var code = (DestinyErrorCode)response.ErrorCode;
+                if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
+                    throw new DestinyException(code);
+                return response.Response.data;
+            }
+        }
+
+        public dynamic GetAccountItmes(int membershipType, string destinyMembershipId)
+        {
+            using (var destiny = _destiny)
+            {
+                var result = destiny.GetAccountItems(membershipType, destinyMembershipId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
+                var code = (DestinyErrorCode)response.ErrorCode;
+                if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
+                    throw new DestinyException(code);
+                return response.Response.data;
+            }
+        }
+
+        public dynamic GetCharacterSummary(int membershipType, string destinyMembershipId, string characterId)
+        {
+            using (var destiny = _destiny)
+            {
+                var result = destiny.GetCharacterSummary(membershipType, destinyMembershipId, characterId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
+                var code = (DestinyErrorCode)response.ErrorCode;
+                if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
+                    throw new DestinyException(code);
+                return response.Response.data;
+            }
+        }
+
+        public dynamic GetCharacterAdvisors(int membershipType, string destinyMembershipId, string characterId)
+        {
+            using (var destiny = _destiny)
+            {
+                var result = destiny.GetCharacterAdvisors(membershipType, destinyMembershipId, characterId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
+                var code = (DestinyErrorCode)response.ErrorCode;
+                if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
+                    throw new DestinyException(code);
+                return response.Response.data;
+            }
+        }
+
+        public dynamic GetCharacterActivities(int membershipType, string destinyMembershipId, string characterId)
+        {
+            using (var destiny = _destiny)
+            {
+                var result = destiny.GetCharacterActivities(membershipType, destinyMembershipId, characterId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
+                var code = (DestinyErrorCode)response.ErrorCode;
+                if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
+                    throw new DestinyException(code);
+                return response.Response.data;
+            }
+        }
+
+        public dynamic GetCharacterProgression(int membershipType, string destinyMembershipId, string characterId)
+        {
+            using (var destiny = _destiny)
+            {
+                var result = destiny.GetCharacterProgression(membershipType, destinyMembershipId, characterId).Result;
+                dynamic response = JsonConvert.DeserializeObject(result);
                 var code = (DestinyErrorCode)response.ErrorCode;
                 if (code != DestinyErrorCode.Success && code != DestinyErrorCode.None)
                     throw new DestinyException(code);

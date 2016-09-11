@@ -482,10 +482,17 @@ namespace Destiny.Client
         {
 
         }
-        public DestinyException(DestinyErrorCode code)
+        public DestinyException(DestinyErrorCode code) : base(GetMessage(code))
         {
             ErrorCode = code;
         }
+
+        private static string GetMessage(DestinyErrorCode code)
+        {
+            string result = Enum.GetName(code.GetType(), code);
+            return result;
+        }
+
         public DestinyErrorCode ErrorCode { get; set; }
     }
 }
