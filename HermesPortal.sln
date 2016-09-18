@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HermesWeb", "HermesWeb\Herm
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Destiny.Client", "src\Destiny.Client\Destiny.Client.xproj", "{AA3C448E-D6C9-4CFA-8A4F-111087523D3D}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Web.Client", "src\Web.Client\Web.Client.xproj", "{863096D8-B8F5-40BB-A164-82F252C6C3B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{AA3C448E-D6C9-4CFA-8A4F-111087523D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3C448E-D6C9-4CFA-8A4F-111087523D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3C448E-D6C9-4CFA-8A4F-111087523D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863096D8-B8F5-40BB-A164-82F252C6C3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863096D8-B8F5-40BB-A164-82F252C6C3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863096D8-B8F5-40BB-A164-82F252C6C3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863096D8-B8F5-40BB-A164-82F252C6C3B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +47,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3DE0CD92-3974-47D7-84BB-70B30FE78088} = {524DB1E0-1598-4587-9E95-1FE0A099CFAD}
 		{AA3C448E-D6C9-4CFA-8A4F-111087523D3D} = {524DB1E0-1598-4587-9E95-1FE0A099CFAD}
+		{863096D8-B8F5-40BB-A164-82F252C6C3B5} = {524DB1E0-1598-4587-9E95-1FE0A099CFAD}
 	EndGlobalSection
 EndGlobal
