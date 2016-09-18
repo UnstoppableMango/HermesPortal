@@ -8,6 +8,7 @@ namespace Destiny.Client
 {
     interface IDestinyCommunicationsClient : IDisposable
     {
+        Task<string> GetNews();
         Task<string> GetItem(string itemType, string itemId);
         Task<string> GetAccountSummary(int membershipType, string destinyMembershipId);
         Task<string> GetAccountAdvisors(int membershipType, string destinyMembershipId);

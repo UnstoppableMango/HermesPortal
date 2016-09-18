@@ -43,11 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\css\DestinyHexValues.txt" />
+    <Content Include="app\css\DestinyHexValues.css" />
     <Content Include="app\images\2726250.jpg" />
     <Content Include="app\images\Destiny_20150915140922.jpg" />
     <Content Include="app\images\dubai-abudhabi.jpg" />
     <Content Include="app\images\future city high quality wallpaper.jpg" />
+    <Content Include="app\images\game039.png" />
     <Content Include="app\images\nice-nature-high-definition-wallpapers.jpg" />
     <Content Include="app\images\Phoenix_Convention_Center_-_South_on_3rd_St_-_2009-07-06.jpg" />
     <Content Include="app\images\Porsche-Logo-High-Quality-Wallpaper.jpg" />
@@ -73,6 +74,7 @@
     <Content Include="app\js\controllers\navbarController.min.js">
       <DependentUpon>navbarController.js</DependentUpon>
     </Content>
+    <Content Include="app\js\directives\ng-scrollbar.js" />
     <Content Include="app\js\services\dashService.js" />
     <Content Include="app\js\services\dashService.min.js">
       <DependentUpon>dashService.js</DependentUpon>
@@ -170,6 +172,11 @@
     </Content>
     <Content Include="app\lib\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="app\lib\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="app\lib\jquery-mousewheel\jquery.mousewheel.js" />
+    <Content Include="app\lib\jquery-mousewheel\jquery.mousewheel.min.js">
+      <DependentUpon>jquery.mousewheel.js</DependentUpon>
+    </Content>
+    <Content Include="app\lib\jquery-mousewheel\LICENSE.txt" />
     <Content Include="app\lib\jquery\AUTHORS.txt" />
     <Content Include="app\lib\jquery\dist\core.js" />
     <Content Include="app\lib\jquery\dist\jquery.js" />
@@ -298,6 +305,15 @@
     <Content Include="app\lib\jquery\src\var\support.js" />
     <Content Include="app\lib\jquery\src\var\toString.js" />
     <Content Include="app\lib\jquery\src\wrap.js" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.concat.min.js">
+      <DependentUpon>jquery.mCustomScrollbar.js</DependentUpon>
+    </Content>
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.css" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.js" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.min.css">
+      <DependentUpon>jquery.mCustomScrollbar.css</DependentUpon>
+    </Content>
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\mCSB_buttons.png" />
     <Content Include="app\lib\metro-bootstrap\.gitattributes" />
     <Content Include="app\lib\metro-bootstrap\.gitignore" />
     <Content Include="app\lib\metro-bootstrap\app\fonts\font-awesome\fontawesome-webfont.svg" />
@@ -335,6 +351,7 @@
     <Content Include="app\views\partial\background.html" />
     <Content Include="app\views\partial\loading.html" />
     <Content Include="app\views\partial\navbar.html" />
+    <Content Include="app\views\partial\widgetloading.html" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include=".bowerrc" />
@@ -553,6 +570,15 @@
     <Content Include="app\lib\metro-bootstrap\metro-bootstrap.nuspec" />
     <Content Include="app\lib\metro-bootstrap\package.json" />
     <Content Include="app\lib\metro-bootstrap\README.md" />
+    <Content Include="app\fonts\Futura-T-OT-Book_19064.ttf" />
+    <Content Include="app\fonts\NHaasGroteskTXPro-65Md.ttf" />
+    <Content Include="app\fonts\EpocaPro-Medium.otf" />
+    <Content Include="app\lib\jquery-mousewheel\.bower.json" />
+    <Content Include="app\lib\jquery-mousewheel\bower.json" />
+    <Content Include="app\lib\jquery-mousewheel\ChangeLog.md" />
+    <Content Include="app\lib\jquery-mousewheel\README.md" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\.bower.json" />
+    <Content Include="app\lib\malihu-custom-scrollbar-plugin\bower.json" />
     <None Include="bundleconfig.json" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\HermesWeb.pubxml" />
@@ -580,7 +606,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\js\directives\" />
     <Folder Include="app\js\filters\" />
   </ItemGroup>
   <ItemGroup>

@@ -164,10 +164,13 @@
 -r:"C:\Users\Erik\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Erik\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Erik\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
+-r:"C:\Users\Erik\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll"
 -r:"C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\Destiny.Client\bin\Debug\netstandard1.6\Destiny.Client.dll"
 -resource:"C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\obj\Debug\netcoreapp1.0\HermesAPIdotnet-compile.deps.json",HermesAPI.deps.json
 "C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Program.cs"
 "C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Startup.cs"
 "C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Controllers\BaseController.cs"
 "C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Controllers\DestinyAccountController.cs"
+"C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Controllers\DestinyCharacterController.cs"
+"C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Controllers\DestinyController.cs"
 "C:\Users\Erik\Documents\My Documents\Server\Hermes\HermesPortal\src\HermesAPI\Controllers\SystemController.cs"
