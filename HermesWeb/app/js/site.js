@@ -17,7 +17,7 @@ app.config(function ($routeProvider) {
     $routeProvider.otherwise({ redirectTo: "/dash" });
 });
 
-var buildConfig = "dev";
+var buildConfig = "prod";
 
 var serviceBase;
 if (buildConfig == "dev") {
