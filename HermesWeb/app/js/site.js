@@ -1,4 +1,6 @@
-﻿var app = angular.module('HermesPortal', ['ngRoute']);
+﻿var app = angular.module('HermesPortal', [
+    'ngRoute'
+]);
 
 app.config(function ($routeProvider) {
     $routeProvider.when("/dash", {
@@ -13,4 +15,18 @@ app.config(function ($routeProvider) {
     });
 
     $routeProvider.otherwise({ redirectTo: "/dash" });
+});
+
+var buildConfig = "dev";
+
+var serviceBase;
+if (buildConfig == "dev") {
+    serviceBase = "http://localhost:6953";
+}
+else if (buildConfig == "prod") {
+    serviceBase = "http://localhost:5000";
+}
+
+app.constant('serviceSettings', {
+    apiServiceBaseUri: serviceBase
 });
